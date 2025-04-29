@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState} from 'react'
-import products from "../products";
+// import products from "../products";
 import Rating from '../components/Rating'
 import { Link } from "react-router-dom";
 import {
