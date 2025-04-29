@@ -2,9 +2,16 @@ import express from 'express'
 import dotenv from 'dotenv'
 dotenv.config()
 import products from './data/products.js'
-const port = process.env.PORT || 5001 ;
+import cors from 'cors';
+
+
+
+
+const port = process.env.PORT || 5001;
 
 const app = express()
+
+app.use(cors({ origin: 'http://localhost:3000' }));
 
 app.get('/', (req, res) => { 
     res.send('API is running...')
