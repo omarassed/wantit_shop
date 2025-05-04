@@ -22,7 +22,8 @@
   "homepage": "https://github.com/omarassed/wantit_shop#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongoose": "^8.14.1"
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
