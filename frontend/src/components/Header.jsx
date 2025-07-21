@@ -31,9 +31,19 @@ function Header() {
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>
+            <Navbar.Brand
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                fontFamily: "'Pacifico', cursive",   // your chosen font
+                fontSize: '3rem',                   // adjust size
+                fontWeight: 'bold',                   // optional
+                marginLeft: '10px',                   // space from the logo
+              }}
+            >
               <img
                 src={logo}
+                alt='logo'
                 style={{
                   width: "60px",
                   height: "60px",
@@ -41,7 +51,7 @@ function Header() {
                   margin: "10px",
                 }}
               ></img>
-              WANT IT
+              WANT IT? WE GOT IT.
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
